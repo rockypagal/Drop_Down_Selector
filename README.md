@@ -148,12 +148,10 @@ const MyComponent = () => {
       dropDownTitle="Select an option"
       animateDropDownTitle={true}
       options={options}
-      placeholder="Choose..."
       size="medium"
       showSearchBar={true}
       customSetter={setSelectedValue}
       customDropBoxStyles={{ border: '1px solid #ccc' }}
-      customTextStyle={{ color: 'blue' }}
       resetButton={true}
     />
   );
