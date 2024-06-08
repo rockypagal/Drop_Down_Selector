@@ -1,70 +1,172 @@
-# Getting Started with Create React App
+Here's a detailed documentation for the `DropDownBox` component.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+# `DropDownBox` Component
 
-In the project directory, you can run:
+The `DropDownBox` component is a customizable and feature-rich dropdown selector for React applications. This documentation provides an overview of its props, behavior, and usage.
 
-### `npm start`
+## Props
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### `dropDownTitle`
+- **Type:** `string`
+- **Description:** The label for the dropdown.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### `animateDropDownTitle`
+- **Type:** `boolean`
+- **Description:** If true, animates the dropdown title on focus or when a value is selected.
 
-### `npm test`
+### `options`
+- **Type:** `Array<{label: string, value: string}>`
+- **Description:** Array of objects to populate the dropdown options.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `placeholder`
+- **Type:** `string`
+- **Description:** Placeholder text for the dropdown.
 
-### `npm run build`
+### `size`
+- **Type:** `string`
+- **Description:** Sets predefined sizes for the dropdown. Accepted values are `"small"`, `"medium"`, `"large"`, or `"mini"`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### `showSearchBar`
+- **Type:** `boolean`
+- **Description:** If true, shows a search bar within the dropdown.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `customSetter`
+- **Type:** `function`
+- **Description:** Function to set the selected value. Typically used with `useState` or `formik.setFieldValue`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### `customFormikLabel`
+- **Type:** `string`
+- **Description:** The label used for `formik.setFieldValue`.
 
-### `npm run eject`
+### `customDropBoxStyles`
+- **Type:** `object`
+- **Description:** Custom styles for the select box.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### `disabled`
+- **Type:** `boolean`
+- **Default:** `false`
+- **Description:** If true, disables the dropdown.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### `customTextStyle`
+- **Type:** `object`
+- **Description:** Custom styles for the text within the dropdown.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### `animateDropDownTitleStyle`
+- **Type:** `object`
+- **Description:** Object containing styles for the animated dropdown title. Format: `{ labelDown: { style }, labelUp: { style } }`.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### `incomingValue`
+- **Type:** `string`
+- **Description:** Incoming value to be set on render.
 
-## Learn More
+### `resetButton`
+- **Type:** `boolean`
+- **Description:** If true, shows a reset button to clear the selected value.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### `callCustomFunction`
+- **Type:** `function`
+- **Description:** Custom function to be called with the selected value.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### `customValueForCustomFunction`
+- **Type:** `any`
+- **Description:** Custom value to be passed to the `callCustomFunction`.
 
-### Code Splitting
+### `listApi`
+- **Type:** `function`
+- **Description:** API call function to fetch list options.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### `apiData`
+- **Type:** `object`
+- **Default:** `{}`
+- **Description:** Data to be sent with the API request.
 
-### Analyzing the Bundle Size
+### `dispatch`
+- **Type:** `function`
+- **Description:** Redux dispatch function.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### `listOfKeyValue`
+- **Type:** `object`
+- **Description:** Object containing label and value keys for options. Format: `{ labelKey: "productName", valueKey: "productId" }`.
 
-### Making a Progressive Web App
+## Behavior
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### State Variables
 
-### Advanced Configuration
+- `showMenu`: Controls the visibility of the dropdown menu.
+- `addStyle`: Toggles additional styles for the dropdown arrow.
+- `menuOptions`: Holds the options to be displayed in the dropdown menu.
+- `dropDownValue`: Holds the current displayed value of the dropdown.
+- `dropDownValueTwo`: Holds the current selected value's internal representation.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Methods
 
-### Deployment
+- `handleClick`: Toggles the dropdown menu visibility and handles styling.
+- `chatBoxVisibility`: Manages the visibility of the dropdown menu with a delay for smooth transition.
+- `useEffect` for updating state based on props and other dependencies.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Dropdown Menu Component (`DropDownMenu`)
 
-### `npm run build` fails to minify
+#### Props
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- `options`
+- `disabled`
+- `addStyle`
+- `showSearchBar`
+- `dropDownValueTwo`
+- `resetButton`
+- `menuOptions`
+- `setDropDownValue`
+- `setDropDownValueTwo`
+- `setMenuOptions`
+- `showMenu`
+- `handleClick`
+- `listApi`
+- `dispatch`
+
+#### Methods
+
+- `handleSearch`: Filters `menuOptions` based on the search input.
+- `useEffect` hooks for handling side effects such as global click detection, menu option updates, and search filtering.
+
+## Usage Example
+
+```jsx
+import React, { useState } from 'react';
+import DropDownBox from './DropDownBox';
+
+const MyComponent = () => {
+  const [selectedValue, setSelectedValue] = useState('');
+  const options = [
+    { label: 'Option 1', value: 'option1' },
+    { label: 'Option 2', value: 'option2' },
+  ];
+
+  return (
+    <DropDownBox
+      dropDownTitle="Select an option"
+      animateDropDownTitle={true}
+      options={options}
+      placeholder="Choose..."
+      size="medium"
+      showSearchBar={true}
+      customSetter={setSelectedValue}
+      customDropBoxStyles={{ border: '1px solid #ccc' }}
+      customTextStyle={{ color: 'blue' }}
+      resetButton={true}
+    />
+  );
+};
+
+export default MyComponent;
+```
+
+## Notes
+
+- Ensure to provide required props such as `options` and `customSetter` for proper functionality.
+- The component is designed to be flexible with various styling and functionality customizations.
+
+---
+
+This documentation covers the main aspects of the `DropDownBox` component, including prop types, behaviors, and usage examples. Adjust as needed for your project's specific requirements.
