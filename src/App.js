@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import DropDownBox from "./components/dropdown";
 
 function App() {
+  const [value, setValue] = useState("");
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <DropDownBox
+        options={[
+          { label: "New York", value: "new_york" },
+          { label: "California", value: "california" },
+          { label: "Ohio", value: "ohio" },
+        ]}
+        dropDownTitle={"US Stats"}
+        animateDropDownTitle={true}
+        customSetter={setValue}
+      />
     </div>
   );
 }
