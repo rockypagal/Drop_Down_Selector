@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 # `DropDownBox` Component
 
 The `DropDownBox` component is a customizable and feature-rich 
