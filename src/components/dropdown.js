@@ -32,10 +32,10 @@ const DropDownBox = ({
   const handleClick = (e) => {
     setAddStyle(!addStyle);
     // formik.setFieldValue("search", "")
-    chatBoxVisibility();
+    DropBoxVisibility();
   };
 
-  function chatBoxVisibility() {
+  function DropBoxVisibility() {
     if (showMenu) {
       const styleTimer = setTimeout(() => {
         setShowMenu(false);
