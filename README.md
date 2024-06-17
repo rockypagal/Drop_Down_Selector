@@ -101,7 +101,7 @@ an overview of its props, behavior, and usage.
 ### Methods
 
 - `handleClick`: Toggles the dropdown menu visibility and handles styling.
-- `chatBoxVisibility`: Manages the visibility of the dropdown menu with a delay for smooth transition.
+- `DropBoxVisibility`: Manages the visibility of the dropdown menu with a delay for smooth transition.
 - `useEffect` for updating state based on props and other dependencies.
 
 ### Dropdown Menu Component (`DropDownMenu`)
@@ -229,7 +229,7 @@ The `DropDownBox` component is a customizable and feature-rich dropdown selector
 ### Methods
 
 - `handleClick`: Toggles the dropdown menu visibility and handles styling.
-- `chatBoxVisibility`: Manages the visibility of the dropdown menu with a delay for smooth transition.
+- `DropBoxVisibility`: Manages the visibility of the dropdown menu with a delay for smooth transition.
 - `useEffect` for updating state based on props and other dependencies.
 
 ### Dropdown Menu Component (`DropDownMenu`)
