@@ -295,8 +295,5 @@ export default MyComponent;
 
 ---
 
-<<<<<<< HEAD
+
 This documentation covers the main aspects of the `DropDownBox` component, including prop types, behaviors, and usage examples. Adjust as needed for your project's specific requirements.
-=======
-This documentation covers the main aspects of the `DropDownBox` component, including prop types, behaviors, and usage examples. Adjust as needed for your project's specific requirements.
->>>>>>> 78e4cefe55d09714a6051d08b2ef8ea9ee4aa585
