@@ -120,6 +120,29 @@
   animation: show_component-common-animation 0.1s ease-in-out forwards;
 }
 
+.drop-down-search-bar input {
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid rgba(130, 139, 178, 0.3);
+  border-radius: 3px;
+  color: #333;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0.5rem;
+  width: 95%;
+  height: 2.25rem;
+  line-height: 2.25rem;
+  outline: 0;
+  width: 100%;
+  font-weight: 500;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  outline: none;
+  color: #333;
+  background: #fff;
+  border: 1px solid #d2d6da;
+}
+
 @keyframes show_component-common-animation {
   0% {
     opacity: 0;
@@ -239,9 +262,10 @@
 }
 
 .drop-down-menu .drop-down-search-bar {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  padding: 0.4rem 0;
+  padding: 0.4rem 0; */
+  padding: 0.4rem;
 }
 
 .drop-down-search-bar input {
@@ -253,7 +277,7 @@
   display: inline-block;
   vertical-align: middle;
   padding: 0.5rem;
-  width: 95%;
+  /* width: 95%; */
   height: 2.25rem;
   line-height: 2.25rem;
   outline: 0;

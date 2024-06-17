@@ -287,7 +287,7 @@ const DropDownMenu = ({
           ref={showMenu && globalClick ? menuRef : null}
         >
           {showSearchBar ? (
-            <div className="search-bar">
+           <div className='drop-down-search-bar'>
               <input
                 type="text"
                 placeholder="search here..."
