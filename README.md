@@ -251,7 +251,6 @@ The `DropDownBox` component is a customizable and feature-rich dropdown selector
 - `listApi`
 - `dispatch`
 
->>>>>>> 78e4cefe55d09714a6051d08b2ef8ea9ee4aa585
 #### Methods
 
 - `handleSearch`: Filters `menuOptions` based on the search input.
@@ -275,18 +274,12 @@ const MyComponent = () => {
       dropDownTitle="Select an option"
       animateDropDownTitle={true}
       options={options}
-<<<<<<< HEAD
       placeholder="Choose..."
-=======
->>>>>>> 78e4cefe55d09714a6051d08b2ef8ea9ee4aa585
       size="medium"
       showSearchBar={true}
       customSetter={setSelectedValue}
       customDropBoxStyles={{ border: '1px solid #ccc' }}
-<<<<<<< HEAD
       customTextStyle={{ color: 'blue' }}
-=======
->>>>>>> 78e4cefe55d09714a6051d08b2ef8ea9ee4aa585
       resetButton={true}
     />
   );
