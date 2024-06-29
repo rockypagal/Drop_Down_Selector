@@ -15,6 +15,7 @@ function App() {
         dropDownTitle={"US Stats"}
         animateDropDownTitle={true}
         customSetter={setValue}
+        showSearchBar={true}
       />
     </div>
   );
