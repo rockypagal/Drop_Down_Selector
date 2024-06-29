@@ -11,15 +11,6 @@ function App() {
           { label: "New York", value: "new_york" },
           { label: "California", value: "california" },
           { label: "Ohio", value: "ohio" },
-          { label: "New York", value: "new_york" },
-          { label: "California", value: "california" },
-          { label: "Ohio", value: "ohio" },
-          { label: "New York", value: "new_york" },
-          { label: "California", value: "california" },
-          { label: "Ohio", value: "ohio" },
-          { label: "New York", value: "new_york" },
-          { label: "California", value: "california" },
-          { label: "Ohio", value: "ohio" },
         ]}
         dropDownTitle={"US Stats"}
         animateDropDownTitle={true}
