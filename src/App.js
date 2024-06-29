@@ -24,12 +24,8 @@ function App() {
         dropDownTitle={"US Stats"}
         animateDropDownTitle={true}
         customSetter={setValue}
-<<<<<<< HEAD
-        showSearchBar={true}
-=======
         showSearchBar
         resetButton
->>>>>>> 1b54d22681afe73934305b116d123c7bdc41de98
       />
     </div>
   );
