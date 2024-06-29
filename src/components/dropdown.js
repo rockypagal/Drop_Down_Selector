@@ -32,10 +32,10 @@ const DropDownBox = ({
   const handleClick = (e) => {
     setAddStyle(!addStyle);
     // formik.setFieldValue("search", "")
-    chatBoxVisibility();
+    DropBoxVisibility();
   };
 
-  function chatBoxVisibility() {
+  function DropBoxVisibility() {
     if (showMenu) {
       const styleTimer = setTimeout(() => {
         setShowMenu(false);
@@ -287,7 +287,7 @@ const DropDownMenu = ({
           ref={showMenu && globalClick ? menuRef : null}
         >
           {showSearchBar ? (
-            <div className="search-bar">
+           <div className='drop-down-search-bar'>
               <input
                 type="text"
                 placeholder="search here..."
