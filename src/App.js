@@ -11,11 +11,25 @@ function App() {
           { label: "New York", value: "new_york" },
           { label: "California", value: "california" },
           { label: "Ohio", value: "ohio" },
+          { label: "New York", value: "new_york" },
+          { label: "California", value: "california" },
+          { label: "Ohio", value: "ohio" },
+          { label: "New York", value: "new_york" },
+          { label: "California", value: "california" },
+          { label: "Ohio", value: "ohio" },
+          { label: "New York", value: "new_york" },
+          { label: "California", value: "california" },
+          { label: "Ohio", value: "ohio" },
         ]}
         dropDownTitle={"US Stats"}
         animateDropDownTitle={true}
         customSetter={setValue}
+<<<<<<< HEAD
         showSearchBar={true}
+=======
+        showSearchBar
+        resetButton
+>>>>>>> 1b54d22681afe73934305b116d123c7bdc41de98
       />
     </div>
   );
