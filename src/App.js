@@ -25,6 +25,7 @@ function App() {
         animateDropDownTitle={true}
         customSetter={setValue}
         showSearchBar
+        resetButton
       />
     </div>
   );
