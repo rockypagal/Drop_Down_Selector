@@ -125,11 +125,6 @@ an overview of its props, behavior, and usage.
 
 =======
 
-#### Methods
-
-- `handleSearch`: Filters `menuOptions` based on the search input.
-- `useEffect` hooks for handling side effects such as global click detection, menu option updates, and search filtering.
-
 ## Usage Example
 
 ```jsx
