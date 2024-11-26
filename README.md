@@ -1,8 +1,8 @@
 # `DropDownBox` Component
 
 The `DropDownBox` component is a customizable and feature-rich 
-dropdown selector for React applications.This documentation provides 
-an overview of its props, behavior, and usage.
+dropdown selector for React applications. This documentation provides 
+an overview of its props, behaviour, and usage.
 
 ## Props
 
